@@ -1,10 +1,9 @@
 # Getting and Cleaning Data - Course Project
 
 ## Background
-Objective: Obtain and clean wearables data downloaded from UCI
-Source data: ```https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip```
-
-Depdencies: ```dplyr``` package
+* Objective: Obtain and clean wearables data downloaded from UCI
+* Source data: ```https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip```
+* Depdencies: ```dplyr``` package
 
 ## Requirements:
 1. Tidy data set

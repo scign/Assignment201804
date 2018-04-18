@@ -28,7 +28,7 @@ There are other files that are contained in the compressed download file but the
 ## Deliverables
 File | Contents
 ---|---
-```README.mn``` | This file
+```README.md``` | This file
 ```CodeBook.md``` | Code book describing the variables, data, transformations and cleaning procedures
 ```run_analysis.R``` | The file with the R code
 

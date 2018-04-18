@@ -12,21 +12,28 @@
 1. ```README.md``` explaining how the scripts work and how they are connected
 
 ## Source files
-Data | Source file
+File | Contents
 ---|---
-Training data - subject IDs | ```train\subject_train.txt```
-Training data - measurements | ```train\X_train.txt```
-Training data - activity labels | ```train\y_train.txt```
-Test data - subject IDs | ```test\subject_test.txt```
-Test data - measurements | ```test\X_test.txt```
-Test data - activity labels | ```test\y_test.txt```
-Measurement column names | ```features.txt```
-Activity label lookup | ```activities.txt```
+```train\subject_train.txt``` | Training data - subject IDs
+```train\X_train.txt``` | Training data - measurements
+```train\y_train.txt``` | Training data - activity labels
+```test\subject_test.txt``` | Test data - subject IDs
+```test\X_test.txt``` | Test data - measurements
+```test\y_test.txt``` | Test data - activity labels
+```features.txt``` | Measurement column names
+```activities.txt``` | Activity label lookup
 
 There are other files that are contained in the compressed download file but the above are the only ones required.
 
-## Steps taken
-The following steps are a description of the processing carried out by the code contained in ```run_analysis.R```:
+## Deliverables
+File | Contents
+---|---
+```README.mn``` | This file
+```CodeBook.md``` | Code book describing the variables, data, transformations and cleaning procedures
+```run_analysis.R``` | The file with the R code
+
+## High level process
+The following is a description of the steps in ```run_analysis.R```:
 1. Download the data file
 1. Read in the column labels from ```features.txt```
 1. Read in the training data and test data along with subject IDs and activity IDs

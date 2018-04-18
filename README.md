@@ -11,6 +11,8 @@ Source data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%
 4. README.md explaining how the scripts work and how they are connected
 
 ## Source files
+Data | source file
+---|---
 Training data - subject IDs | train\subject_train.txt
 Training data - measurements | train\X_train.txt
 Training data - activity labels | train\y_train.txt

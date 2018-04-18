@@ -11,7 +11,7 @@ Source data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%
 4. README.md explaining how the scripts work and how they are connected
 
 ## Source files
-Data | source file
+Data | Source file
 ---|---
 Training data - subject IDs | train\subject_train.txt
 Training data - measurements | train\X_train.txt
@@ -21,3 +21,10 @@ Test data - measurements | test\X_test.txt
 Test data - activity labels | test\y_test.txt
 Measurement column names | features.txt
 Activity label lookup | activities.txt
+
+There are other files that are contained in the compressed download file but the above are the only ones required.
+
+## Steps taken
+The following steps are a description of the processing carried out by the code contained in ```run_analysis.R```:
+1. Download the data file
+2. Read in the 

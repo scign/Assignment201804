@@ -155,3 +155,4 @@ names(df3) <- c(
 final <- df3 %>% group_by(subjectid,activity) %>% summarize_all(mean)
 
 cat("\nDone - computed means are in dataframe 'final'\n")
+write.table(final, "wearables_summary.txt", row.names=FALSE)

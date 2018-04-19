@@ -65,12 +65,12 @@ df_test <- cbind(subjects_test, activities_test, data_test)
 # combine training and testing data
 df <- rbind(df_train, df_test)
 
-# replace brackets, dashes and commas with dots
-# column.names <- gsub("[\\(\\)-,]", ".", names(df))
 # find mean and std columns
-means.and.stds <- grepl("([Mm]ean[^F])|([Ss]td)", names(df))
-# extract only the IDs and stats
-df2 <- df[, c("subjectid","activityid",means.and.stds)]
+# means.and.stds <- grepl("([Mm]ean[^F])|([Ss]td)", names(df))
+means.and.stds <- grepl("^[tf].*([Mm]ean[^F])|([Ss]td)", names(df))
+
+# extract only the IDs (first 2 columns) and stats
+df2 <- df[, c(TRUE,TRUE,means.and.stds[-(1:2)])]
 
 # merge with activity labels
 activities <- read.table(
@@ -151,7 +151,7 @@ names(df3) <- c(
   "fft.angular.velocity.magnitude.standard.deviation",
   "activity")
 
-cat("Computing final output means\n")
+# compute final output means
 final <- df3 %>% group_by(subjectid,activity) %>% summarize_all(mean)
 
 cat("\nDone - computed means are in dataframe 'final'\n")

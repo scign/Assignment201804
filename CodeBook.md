@@ -571,17 +571,17 @@ angle(tBodyGyroJerkMean,gravityMean)|   Not used | N/A
 angle(X,gravityMean)                |   Not used | N/A
 angle(Y,gravityMean)                |   Not used | N/A
 angle(Z,gravityMean)                |   Not used | N/A
-
+[Top](#contents)
 
 ## Data transformations
-
 1. Read in training and test x-value data and combined to one table
 1. extract only mean and standard deviation metrics, as well as student and activity IDs
 1. Merge with activity labels
 1. Rename variable names
 1. Group by subject ID and activity
 1. Calculate mean of each group
-
+[Top](#contents)
 
 ## Output
-Mean by subject ID and activity of all measured and calculaed observations
+Mean by subject ID and activity of all measured and calculated observations
+[Top](#contents)

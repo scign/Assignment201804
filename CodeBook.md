@@ -571,6 +571,7 @@ angle(tBodyGyroJerkMean,gravityMean)|   Not used | N/A
 angle(X,gravityMean)                |   Not used | N/A
 angle(Y,gravityMean)                |   Not used | N/A
 angle(Z,gravityMean)                |   Not used | N/A
+
 [Top](#contents)
 
 ## Data transformations
@@ -580,8 +581,10 @@ angle(Z,gravityMean)                |   Not used | N/A
 1. Rename variable names
 1. Group by subject ID and activity
 1. Calculate mean of each group
+
 [Top](#contents)
 
 ## Output
 Mean by subject ID and activity of all measured and calculated observations
+
 [Top](#contents)
